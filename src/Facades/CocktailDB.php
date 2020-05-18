@@ -3,6 +3,7 @@
 namespace JBernavaPrah\CocktailDB\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use JBernavaPrah\CocktailDB\Client;
 use JBernavaPrah\CocktailDB\Resources\Drink;
 
 /**
@@ -12,6 +13,7 @@ use JBernavaPrah\CocktailDB\Resources\Drink;
  * @method static array listOfIngredients()
  * @method static Drink[] searchDrinkByName(string $name)
  * @method static Drink[] searchDrinkByIngredient(string $ingredient)
+ * @method static Client setApiKey(string $key)
  */
 class CocktailDB extends Facade
 {

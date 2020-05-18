@@ -18,7 +18,7 @@ class CocktailDBServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$this->app->singleton('cocktaildb', function ($app) {
-			return new Client();
+			return new Client(config('cocktaildb.key'));
 		});
 
 		$this->app->alias('cocktaildb', Client::class);
@@ -43,6 +43,6 @@ class CocktailDBServiceProvider extends ServiceProvider
 	 */
 	public function provides()
 	{
-		return ['cocktaildb', Client::class];
+		return [Client::class];
 	}
 }

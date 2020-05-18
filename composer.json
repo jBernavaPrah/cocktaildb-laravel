@@ -29,7 +29,10 @@
         "laravel": {
             "providers": [
                 "JBernavaPrah\\CocktailDB\\CocktailDBServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "CocktailDB": "JBernavaPrah\\CocktailDB\\Facades\\CocktailDB"
+            }
         }
     }
 }
