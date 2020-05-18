@@ -1,0 +1,35 @@
+{
+    "name": "jbernavaprah/cocktaildb-laravel",
+    "description": "Laravel and Lumen wrapper package for the theCocktailDB.com API",
+    "authors": [
+        {
+            "name": "Jure Bernava Prah",
+            "email": "webjure@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/jbernavaprah/cocktaildb-laravel",
+    "minimum-stability": "dev",
+    "keywords": [
+        "wrapper",
+        "lumen",
+        "laravel",
+        "cocktaildb",
+        "cocktaildb-laravel"
+    ],
+    "require": {
+        "ext-json": "*",
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "JBernavaPrah\\CocktailDB\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JBernavaPrah\\CocktailDB\\CocktailDBServiceProvider"
+            ]
+        }
+    }
+}
