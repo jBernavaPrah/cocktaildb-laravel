@@ -6,7 +6,7 @@ namespace JBernavaPrah\CocktailDB\Actions;
 
 trait Ingredient
 {
-    public function listOfIngredients()
+    public function ingredients()
     {
         //https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
 

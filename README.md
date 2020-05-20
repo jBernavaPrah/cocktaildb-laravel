@@ -10,15 +10,15 @@ Laravel PHP Facade/Wrapper for the TheCocktailDB.com APis
 
 ## Installation
 
-Run in console below command to download package to your project:
+You can pull in the package via composer:
 ```
 composer require jbernavaprah/cocktaildb-laravel
 ```
+The package will automatically register itself.
 
-Publish config settings:
-If you need to change the API Production Key use
+If you need to change the API Production Key use:
 
-In the .env file
+In the .env file:
 ```
 COCKTAILDB_KEY = KEY
 ```
@@ -43,10 +43,17 @@ CocktailDB::setApiKey('KEY');
 use JBernavaPrah\CocktailDB\Facades\CocktailDB;
 
 // Return an Ingredients array
-$ingredients = CocktailDB::listOfIngredients();
+$ingredients = CocktailDB::ingredients();
 
 // Get multiple JBernavaPrah\CocktailDB\Resources\Drinks match name Margaritas
-$drinks = CocktailDB::searchDrinkByName('Margarita');
+$drinks = CocktailDB::searchDrinksByName('Margarita');
+
+// Get multiple JBernavaPrah\CocktailDB\Resources\Drinks match name Margaritas
+$drinks = CocktailDB::searchDrinksByIngredient('Vodka');
 
 // see JBernavaPrah\CocktailDB\Facades\CocktailDB to see more functions...
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
